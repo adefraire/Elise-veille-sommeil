@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — Elise Veille Sommeil</title>
+  <meta name="description" content="Parlons de tes nuits. Réserve un premier échange sans engagement avec Elise pour découvrir comment la méthode Ora Sommeil peut t'aider." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ============ HEADER ============ -->
+  <header class="site-header">
+    <nav class="nav container" aria-label="Navigation principale">
+      <a href="index.html" class="nav__brand" aria-label="Elise Veille Sommeil — accueil">
+        <img class="nav__logo" src="images/medaillon_elise.png" alt="" />
+        <span class="nav__brand-name">Elise Veille Sommeil</span>
+      </a>
+
+      <button class="nav__toggle" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="nav-links">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="nav__links" id="nav-links">
+        <li><a href="index.html" class="nav__link">Accueil</a></li>
+        <li><a href="methode.html" class="nav__link">La méthode</a></li>
+        <li><a href="histoire.html" class="nav__link">Mon histoire</a></li>
+        <li><a href="temoignages.html" class="nav__link">Témoignages</a></li>
+        <li><a href="contact.html" class="nav__link is-active">Contact</a></li>
+        <li><a href="contact.html" class="btn btn--primary nav__cta">Prendre rendez-vous</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ============ PAGE HERO ============ -->
+    <section class="page-hero">
+      <div class="container">
+        <h1 class="page-hero__title">Parlons de tes nuits</h1>
+        <p class="page-hero__intro">
+          Tu te reconnais dans ce que tu as lu ? La première étape, c'est un simple échange,
+          sans engagement.
+        </p>
+      </div>
+    </section>
+
+    <!-- ============ Contact ============ -->
+    <section class="section">
+      <div class="container">
+        <div class="contact-card reveal">
+          <!-- TODO : remplacer href="#" par le lien Calendly -->
+          <a href="#" target="_blank" rel="noopener" class="btn btn--primary">
+            Réserver un premier échange
+          </a>
+
+          <!-- TODO : remplacer href="#" par le lien Tally -->
+          <p class="contact-secondary">
+            Une question avant de te lancer ?
+            <a href="#" target="_blank" rel="noopener">Écris-moi</a>
+          </p>
+
+          <div class="contact-info">
+            <a href="https://www.instagram.com/eliseveillesommeil/" target="_blank" rel="noopener">Instagram</a>
+            <a href="https://www.facebook.com/share/1Aia6VEyLs/" target="_blank" rel="noopener">Facebook</a>
+            <a href="mailto:eliseveilletherapie@gmail.com">eliseveilletherapie@gmail.com</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__col">
+          <img class="footer__logo" src="images/logo_elise_charte.png" alt="" />
+          <p class="footer__brand-name">Elise Veille Sommeil</p>
+          <p class="footer__brand-tag">
+            Accompagnement du sommeil pour les adultes de 30 à 45 ans, grâce à la méthode Ora Sommeil.
+          </p>
+        </div>
+
+        <div class="footer__col">
+          <h4>Navigation</h4>
+          <ul class="footer__links">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="methode.html">La méthode</a></li>
+            <li><a href="histoire.html">Mon histoire</a></li>
+            <li><a href="temoignages.html">Témoignages</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__col">
+          <h4>Restons en lien</h4>
+          <div class="footer__socials">
+            <a href="https://www.instagram.com/eliseveillesommeil/" target="_blank" rel="noopener" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.2c3.2 0 3.6 0 4.9.1 1.2.1 1.8.3 2.2.4.6.2 1 .5 1.4.9.4.4.7.8.9 1.4.2.4.4 1 .4 2.2.1 1.3.1 1.7.1 4.9s0 3.6-.1 4.9c-.1 1.2-.3 1.8-.4 2.2-.2.6-.5 1-.9 1.4-.4.4-.8.7-1.4.9-.4.2-1 .4-2.2.4-1.3.1-1.7.1-4.9.1s-3.6 0-4.9-.1c-1.2-.1-1.8-.3-2.2-.4-.6-.2-1-.5-1.4-.9-.4-.4-.7-.8-.9-1.4-.2-.4-.4-1-.4-2.2C2.2 15.6 2.2 15.2 2.2 12s0-3.6.1-4.9c.1-1.2.3-1.8.4-2.2.2-.6.5-1 .9-1.4.4-.4.8-.7 1.4-.9.4-.2 1-.4 2.2-.4C8.4 2.2 8.8 2.2 12 2.2zm0 1.8c-3.1 0-3.5 0-4.7.1-1.1.1-1.7.2-2.1.4-.5.2-.9.4-1.3.8-.4.4-.6.8-.8 1.3-.2.4-.3 1-.4 2.1C2.6 9.9 2.6 10.3 2.6 12s0 2.1.1 3.3c.1 1.1.2 1.7.4 2.1.2.5.4.9.8 1.3.4.4.8.6 1.3.8.4.2 1 .3 2.1.4 1.2.1 1.6.1 4.7.1s3.5 0 4.7-.1c1.1-.1 1.7-.2 2.1-.4.5-.2.9-.4 1.3-.8.4-.4.6-.8.8-1.3.2-.4.3-1 .4-2.1.1-1.2.1-1.6.1-3.3s0-2.1-.1-3.3c-.1-1.1-.2-1.7-.4-2.1-.2-.5-.4-.9-.8-1.3-.4-.4-.8-.6-1.3-.8-.4-.2-1-.3-2.1-.4-1.2-.1-1.6-.1-4.7-.1zm0 3.1a4.9 4.9 0 1 1 0 9.8 4.9 4.9 0 0 1 0-9.8zm0 8.1a3.2 3.2 0 1 0 0-6.4 3.2 3.2 0 0 0 0 6.4zm6.2-8.3a1.1 1.1 0 1 1-2.3 0 1.1 1.1 0 0 1 2.3 0z"/></svg>
+            </a>
+            <a href="https://www.facebook.com/share/1Aia6VEyLs/" target="_blank" rel="noopener" aria-label="Facebook">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 12a10 10 0 1 0-11.6 9.9v-7H7.9V12h2.5V9.8c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.2.2 2.2.2v2.5h-1.2c-1.2 0-1.6.8-1.6 1.6V12h2.7l-.4 2.9h-2.3v7A10 10 0 0 0 22 12z"/></svg>
+            </a>
+            <a href="mailto:eliseveilletherapie@gmail.com" aria-label="Email">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2zm0 2v.5l8 5 8-5V6H4zm16 12V8.9l-7.5 4.7c-.3.2-.7.2-1 0L4 8.9V18h16z"/></svg>
+            </a>
+          </div>
+          <a class="footer__email" href="mailto:eliseveilletherapie@gmail.com">eliseveilletherapie@gmail.com</a>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <span>© <span data-year>2026</span> Elise Veille Sommeil. Tous droits réservés.</span>
+        <a href="#">Mentions légales</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

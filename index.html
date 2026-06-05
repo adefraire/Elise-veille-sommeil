@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Elise Veille Sommeil — Retrouve des nuits qui te ressemblent</title>
+  <meta name="description" content="Elise Veille Sommeil aide les adultes de 30 à 45 ans à retrouver un sommeil profond grâce à la méthode Ora Sommeil : respiration, hypnose et fleurs de Bach." />
+
+  <!-- Google Fonts : Poppins (titres) + Open Sans (corps) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ============ HEADER ============ -->
+  <header class="site-header">
+    <nav class="nav container" aria-label="Navigation principale">
+      <a href="index.html" class="nav__brand" aria-label="Elise Veille Sommeil — accueil">
+        <img class="nav__logo" src="images/medaillon_elise.png" alt="" />
+        <span class="nav__brand-name">Elise Veille Sommeil</span>
+      </a>
+
+      <button class="nav__toggle" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="nav-links">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="nav__links" id="nav-links">
+        <li><a href="index.html" class="nav__link is-active">Accueil</a></li>
+        <li><a href="methode.html" class="nav__link">La méthode</a></li>
+        <li><a href="histoire.html" class="nav__link">Mon histoire</a></li>
+        <li><a href="temoignages.html" class="nav__link">Témoignages</a></li>
+        <li><a href="contact.html" class="nav__link">Contact</a></li>
+        <li><a href="contact.html" class="btn btn--primary nav__cta">Prendre rendez-vous</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ============ HERO ============ -->
+    <section class="hero">
+      <div class="hero__bg"></div>
+
+      <!-- Étoiles d'ambiance à 4 branches (scintillement), CSS pur, derrière le texte.
+           .star = enveloppe (montée + fondu) ; ::before = forme étoile + scintillement.
+           Les opacités se multiplient -> scintillement borné par --o. -->
+      <div class="hero__particles" aria-hidden="true">
+        <span class="star" style="--x:3%;--s:8px;--o:.55;--c:var(--abricot);--rd:10s;--rde:-2s;--td:3.2s;--tde:-1s"></span>
+        <span class="star" style="--x:7%;--s:6px;--o:.45;--c:var(--dore);--rd:12s;--rde:-7s;--td:4.1s;--tde:-2.5s"></span>
+        <span class="star" style="--x:11%;--s:10px;--o:.65;--c:var(--abricot);--rd:9s;--rde:-4s;--td:2.8s;--tde:-.5s"></span>
+        <span class="star" style="--x:14%;--s:7px;--o:.5;--c:var(--dore);--rd:11s;--rde:-9s;--td:3.6s;--tde:-3s"></span>
+        <span class="star" style="--x:18%;--s:9px;--o:.6;--c:var(--abricot);--rd:12s;--rde:-1s;--td:4.5s;--tde:-1.8s"></span>
+        <span class="star" style="--x:22%;--s:6px;--o:.45;--c:var(--dore);--rd:8s;--rde:-6s;--td:3s;--tde:-2s"></span>
+        <span class="star" style="--x:25%;--s:11px;--o:.7;--c:var(--abricot);--rd:11s;--rde:-3s;--td:3.9s;--tde:-.8s"></span>
+        <span class="star" style="--x:29%;--s:7px;--o:.5;--c:var(--dore);--rd:10s;--rde:-8s;--td:2.6s;--tde:-3.5s"></span>
+        <span class="star" style="--x:33%;--s:8px;--o:.55;--c:var(--abricot);--rd:12s;--rde:-5s;--td:4.2s;--tde:-1.2s"></span>
+        <span class="star" style="--x:36%;--s:6px;--o:.4;--c:var(--dore);--rd:9s;--rde:-10s;--td:3.4s;--tde:-2.8s"></span>
+        <span class="star" style="--x:40%;--s:10px;--o:.65;--c:var(--abricot);--rd:11s;--rde:-2s;--td:2.9s;--tde:-1.5s"></span>
+        <span class="star" style="--x:43%;--s:7px;--o:.5;--c:var(--dore);--rd:12s;--rde:-7s;--td:4.3s;--tde:-.4s"></span>
+        <span class="star" style="--x:47%;--s:9px;--o:.6;--c:var(--abricot);--rd:10s;--rde:-4s;--td:3.1s;--tde:-3.2s"></span>
+        <span class="star" style="--x:50%;--s:6px;--o:.45;--c:var(--dore);--rd:8s;--rde:-9s;--td:3.7s;--tde:-1s"></span>
+        <span class="star" style="--x:54%;--s:12px;--o:.7;--c:var(--abricot);--rd:12s;--rde:-1.5s;--td:4.6s;--tde:-2.2s"></span>
+        <span class="star" style="--x:57%;--s:7px;--o:.5;--c:var(--dore);--rd:11s;--rde:-6s;--td:2.7s;--tde:-.6s"></span>
+        <span class="star" style="--x:61%;--s:8px;--o:.55;--c:var(--abricot);--rd:9s;--rde:-3.5s;--td:4s;--tde:-3s"></span>
+        <span class="star" style="--x:64%;--s:6px;--o:.4;--c:var(--dore);--rd:10s;--rde:-8.5s;--td:3.3s;--tde:-1.7s"></span>
+        <span class="star" style="--x:68%;--s:10px;--o:.65;--c:var(--abricot);--rd:12s;--rde:-2.5s;--td:2.8s;--tde:-2.6s"></span>
+        <span class="star" style="--x:71%;--s:7px;--o:.5;--c:var(--dore);--rd:11s;--rde:-7.5s;--td:4.4s;--tde:-.9s"></span>
+        <span class="star" style="--x:75%;--s:9px;--o:.6;--c:var(--abricot);--rd:8s;--rde:-4.5s;--td:3.5s;--tde:-3.3s"></span>
+        <span class="star" style="--x:78%;--s:6px;--o:.45;--c:var(--dore);--rd:12s;--rde:-10s;--td:3s;--tde:-1.4s"></span>
+        <span class="star" style="--x:82%;--s:11px;--o:.7;--c:var(--abricot);--rd:10s;--rde:-1s;--td:4.1s;--tde:-2.4s"></span>
+        <span class="star" style="--x:85%;--s:7px;--o:.5;--c:var(--dore);--rd:9s;--rde:-6.5s;--td:2.9s;--tde:-.7s"></span>
+        <span class="star" style="--x:89%;--s:8px;--o:.55;--c:var(--abricot);--rd:11s;--rde:-3s;--td:4.5s;--tde:-3.1s"></span>
+        <span class="star" style="--x:92%;--s:6px;--o:.4;--c:var(--dore);--rd:12s;--rde:-8s;--td:3.2s;--tde:-1.6s"></span>
+        <span class="star" style="--x:96%;--s:9px;--o:.6;--c:var(--abricot);--rd:10s;--rde:-5s;--td:3.8s;--tde:-2.9s"></span>
+        <span class="star" style="--x:5%;--s:7px;--o:.5;--c:var(--dore);--rd:11.5s;--rde:-5.5s;--td:3.4s;--tde:-2.1s"></span>
+        <span class="star" style="--x:9%;--s:9px;--o:.6;--c:var(--abricot);--rd:8.5s;--rde:-2s;--td:4.2s;--tde:-.3s"></span>
+        <span class="star" style="--x:16%;--s:6px;--o:.45;--c:var(--dore);--rd:10.5s;--rde:-8s;--td:2.7s;--tde:-3.4s"></span>
+        <span class="star" style="--x:20%;--s:10px;--o:.65;--c:var(--abricot);--rd:12s;--rde:-4s;--td:3.9s;--tde:-1.1s"></span>
+        <span class="star" style="--x:27%;--s:7px;--o:.5;--c:var(--dore);--rd:9.5s;--rde:-9.5s;--td:4.4s;--tde:-2.7s"></span>
+        <span class="star" style="--x:31%;--s:8px;--o:.55;--c:var(--abricot);--rd:11s;--rde:-1.5s;--td:3s;--tde:-.9s"></span>
+        <span class="star" style="--x:38%;--s:6px;--o:.4;--c:var(--dore);--rd:12s;--rde:-6.5s;--td:3.6s;--tde:-3.6s"></span>
+        <span class="star" style="--x:45%;--s:9px;--o:.6;--c:var(--abricot);--rd:8s;--rde:-3s;--td:4.7s;--tde:-1.3s"></span>
+        <span class="star" style="--x:52%;--s:7px;--o:.5;--c:var(--dore);--rd:10.5s;--rde:-8.5s;--td:2.8s;--tde:-2.3s"></span>
+        <span class="star" style="--x:59%;--s:11px;--o:.7;--c:var(--abricot);--rd:11.5s;--rde:-2.5s;--td:4s;--tde:-.5s"></span>
+        <span class="star" style="--x:66%;--s:6px;--o:.45;--c:var(--dore);--rd:9s;--rde:-7s;--td:3.3s;--tde:-3s"></span>
+        <span class="star" style="--x:73%;--s:8px;--o:.55;--c:var(--abricot);--rd:12s;--rde:-4.5s;--td:4.3s;--tde:-1.9s"></span>
+        <span class="star" style="--x:80%;--s:7px;--o:.5;--c:var(--dore);--rd:10s;--rde:-9s;--td:2.9s;--tde:-2.5s"></span>
+        <span class="star" style="--x:87%;--s:10px;--o:.65;--c:var(--abricot);--rd:8.5s;--rde:-2s;--td:3.7s;--tde:-.6s"></span>
+        <span class="star" style="--x:94%;--s:6px;--o:.4;--c:var(--dore);--rd:11s;--rde:-6s;--td:4.1s;--tde:-3.3s"></span>
+        <span class="star" style="--x:2%;--s:9px;--o:.6;--c:var(--abricot);--rd:12s;--rde:-3.5s;--td:3.1s;--tde:-1.5s"></span>
+        <span class="star" style="--x:49%;--s:7px;--o:.5;--c:var(--dore);--rd:9.5s;--rde:-8s;--td:4.5s;--tde:-2.8s"></span>
+        <span class="star" style="--x:98%;--s:8px;--o:.55;--c:var(--abricot);--rd:10.5s;--rde:-5s;--td:3.5s;--tde:-1s"></span>
+
+        <!-- Étoiles filantes occasionnelles (gauche -> droite, et une droite -> gauche) -->
+        <span class="shooting-star shooting-star--1"></span>
+        <span class="shooting-star shooting-star--2"></span>
+        <span class="shooting-star shooting-star--3"></span>
+      </div>
+
+      <div class="hero__inner container">
+        <img class="hero__logo" src="images/logo_elise_charte.png" alt="Elise Veille Sommeil" />
+        <h1 class="hero__title">
+          <span class="hero__line">Retrouve enfin</span>
+          <span class="rotator"><span class="rotator__word">ton sommeil profond</span></span>
+        </h1>
+        <p class="hero__subtitle">
+          Sans changer de matelas, ni d'oreiller, ni avaler un énième médicament.
+        </p>
+        <div class="btn-row btn-row--center">
+          <a href="contact.html" class="btn btn--primary">Prendre rendez-vous</a>
+          <a href="methode.html" class="btn btn--outline">Découvrir la méthode</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 1. Tu cherches au mauvais endroit ============ -->
+    <section class="section">
+      <div class="container">
+        <div class="split">
+          <div class="split__text reveal">
+            <span class="section__eyebrow">Le vrai problème</span>
+            <h2>Tu cherches au mauvais endroit</h2>
+            <p>
+              Matelas, oreillers, médicaments : tu as sûrement déjà tout essayé. Et pourtant,
+              tu te réveilles encore fatigué, la bouche sèche, irritable.
+            </p>
+            <p>
+              C'est normal : la vraie cause, c'est ta respiration et le placement de ta langue
+              pendant la nuit. Et ça, ça se rééduque.
+            </p>
+            <div class="btn-row">
+              <a href="methode.html" class="btn btn--ghost">Comprendre pourquoi →</a>
+            </div>
+          </div>
+          <div class="split__media reveal">
+            <img class="media-img media-img--wide"
+                 src="images/ambiance-nature.webp"
+                 alt="Paysage de montagne et mer de nuages au-dessus de la vallée"
+                 loading="lazy" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 2. Les 3 piliers ============ -->
+    <section class="section section--brume">
+      <div class="container">
+        <div class="text-center reveal">
+          <span class="section__eyebrow">La méthode</span>
+          <h2 class="section__title">La méthode Ora Sommeil, en 3 piliers</h2>
+          <p class="section__intro mx-auto">
+            Trois leviers complémentaires pour traiter la cause profonde de tes nuits agitées,
+            pas seulement les symptômes.
+          </p>
+        </div>
+
+        <div class="cards">
+          <article class="card reveal">
+            <div class="card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M12.8 19.6A2 2 0 1 0 14 16H2"/>
+                <path d="M17.5 8a2.5 2.5 0 1 1 2 4H2"/>
+                <path d="M9.8 4.4A2 2 0 1 1 11 8H2"/>
+              </svg>
+            </div>
+            <h3 class="card__title">Le Souffle Originel</h3>
+            <p class="card__text">On libère ta respiration pour des nuits sans réveils.</p>
+          </article>
+          <article class="card reveal">
+            <div class="card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M12 5a3 3 0 1 0-5.997.125 4 4 0 0 0-2.526 5.77 4 4 0 0 0 .556 6.588A4 4 0 1 0 12 18Z"/>
+                <path d="M12 5a3 3 0 1 1 5.997.125 4 4 0 0 1 2.526 5.77 4 4 0 0 1-.556 6.588A4 4 0 1 1 12 18Z"/>
+                <path d="M15 13a4.5 4.5 0 0 1-3-4 4.5 4.5 0 0 1-3 4"/>
+                <path d="M17.599 6.5a3 3 0 0 0 .399-1.375"/>
+                <path d="M6.003 5.125A3 3 0 0 0 6.401 6.5"/>
+                <path d="M3.477 10.896a4 4 0 0 1 .585-.396"/>
+                <path d="M19.938 10.5a4 4 0 0 1 .585.396"/>
+                <path d="M6 18a4 4 0 0 1-1.967-.516"/>
+                <path d="M19.967 17.484A4 4 0 0 1 18 18"/>
+              </svg>
+            </div>
+            <h3 class="card__title">La Trêve Mentale</h3>
+            <p class="card__text">On apprend à ton cerveau à appuyer sur « off ».</p>
+          </article>
+          <article class="card reveal">
+            <div class="card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M12 5a3 3 0 1 1 3 3m-3-3a3 3 0 1 0-3 3m3-3v1M9 8a3 3 0 1 0 3 3M9 8h1m5 0a3 3 0 1 1-3 3m3-3h-1m-2 3v-1"/>
+                <circle cx="12" cy="8" r="2"/>
+                <path d="M12 10v12"/>
+                <path d="M12 22c4.2 0 7-1.667 7-5-4.2 0-7 1.667-7 5Z"/>
+                <path d="M12 22c-4.2 0-7-1.667-7-5 4.2 0 7 1.667 7 5Z"/>
+              </svg>
+            </div>
+            <h3 class="card__title">L'Harmonie Intérieure</h3>
+            <p class="card__text">On équilibre tes émotions pour retrouver ta sérénité.</p>
+          </article>
+        </div>
+
+        <div class="btn-row btn-row--center reveal">
+          <a href="methode.html" class="btn btn--primary">Découvrir la méthode</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 3. Je suis Elise ============ -->
+    <section class="section">
+      <div class="container">
+        <div class="split split--reverse">
+          <div class="split__media reveal">
+            <img class="media-img"
+                 src="images/portrait-elise.webp"
+                 alt="Portrait d'Elise, thérapeute du sommeil"
+                 loading="lazy" />
+          </div>
+          <div class="split__text reveal">
+            <span class="section__eyebrow">La praticienne</span>
+            <h2>Je suis Elise, et je n'ai jamais bien dormi. Avant.</h2>
+            <p>
+              Kiné, hypnothérapeute et formée aux fleurs de Bach. Maman de trois enfants.
+              J'ai connu la fatigue, le brouillard mental, l'irritabilité.
+            </p>
+            <p>
+              Aujourd'hui, j'aide les adultes de 30 à 45 ans à transformer leurs nuits.
+            </p>
+            <div class="btn-row">
+              <a href="histoire.html" class="btn btn--outline">Découvrir mon histoire</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 4. Témoignage mis en avant ============ -->
+    <section class="section section--creme-fonce">
+      <div class="container">
+        <div class="quote-feature reveal">
+          <div class="quote-feature__mark">“</div>
+          <p class="quote-feature__text">
+            Je n'ai jamais aussi bien dormi depuis que j'ai commencé cet accompagnement.
+          </p>
+          <p class="quote-feature__author">— Marie</p>
+          <div class="btn-row btn-row--center">
+            <a href="temoignages.html" class="btn btn--ghost">Lire les témoignages →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 5. CTA final ============ -->
+    <section class="section">
+      <div class="container">
+        <div class="cta-band reveal">
+          <div class="cta-band__inner">
+            <h2>Prêt à retrouver des nuits qui te ressemblent ?</h2>
+            <p>
+              On fait le point sur tes nuits, et je te montre concrètement comment
+              Ora Sommeil peut t'aider.
+            </p>
+            <a href="contact.html" class="btn btn--primary">Prendre rendez-vous</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__col">
+          <img class="footer__logo" src="images/logo_elise_charte.png" alt="" />
+          <p class="footer__brand-name">Elise Veille Sommeil</p>
+          <p class="footer__brand-tag">
+            Accompagnement du sommeil pour les adultes de 30 à 45 ans, grâce à la méthode Ora Sommeil.
+          </p>
+        </div>
+
+        <div class="footer__col">
+          <h4>Navigation</h4>
+          <ul class="footer__links">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="methode.html">La méthode</a></li>
+            <li><a href="histoire.html">Mon histoire</a></li>
+            <li><a href="temoignages.html">Témoignages</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__col">
+          <h4>Restons en lien</h4>
+          <div class="footer__socials">
+            <a href="https://www.instagram.com/eliseveillesommeil/" target="_blank" rel="noopener" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.2c3.2 0 3.6 0 4.9.1 1.2.1 1.8.3 2.2.4.6.2 1 .5 1.4.9.4.4.7.8.9 1.4.2.4.4 1 .4 2.2.1 1.3.1 1.7.1 4.9s0 3.6-.1 4.9c-.1 1.2-.3 1.8-.4 2.2-.2.6-.5 1-.9 1.4-.4.4-.8.7-1.4.9-.4.2-1 .4-2.2.4-1.3.1-1.7.1-4.9.1s-3.6 0-4.9-.1c-1.2-.1-1.8-.3-2.2-.4-.6-.2-1-.5-1.4-.9-.4-.4-.7-.8-.9-1.4-.2-.4-.4-1-.4-2.2C2.2 15.6 2.2 15.2 2.2 12s0-3.6.1-4.9c.1-1.2.3-1.8.4-2.2.2-.6.5-1 .9-1.4.4-.4.8-.7 1.4-.9.4-.2 1-.4 2.2-.4C8.4 2.2 8.8 2.2 12 2.2zm0 1.8c-3.1 0-3.5 0-4.7.1-1.1.1-1.7.2-2.1.4-.5.2-.9.4-1.3.8-.4.4-.6.8-.8 1.3-.2.4-.3 1-.4 2.1C2.6 9.9 2.6 10.3 2.6 12s0 2.1.1 3.3c.1 1.1.2 1.7.4 2.1.2.5.4.9.8 1.3.4.4.8.6 1.3.8.4.2 1 .3 2.1.4 1.2.1 1.6.1 4.7.1s3.5 0 4.7-.1c1.1-.1 1.7-.2 2.1-.4.5-.2.9-.4 1.3-.8.4-.4.6-.8.8-1.3.2-.4.3-1 .4-2.1.1-1.2.1-1.6.1-3.3s0-2.1-.1-3.3c-.1-1.1-.2-1.7-.4-2.1-.2-.5-.4-.9-.8-1.3-.4-.4-.8-.6-1.3-.8-.4-.2-1-.3-2.1-.4-1.2-.1-1.6-.1-4.7-.1zm0 3.1a4.9 4.9 0 1 1 0 9.8 4.9 4.9 0 0 1 0-9.8zm0 8.1a3.2 3.2 0 1 0 0-6.4 3.2 3.2 0 0 0 0 6.4zm6.2-8.3a1.1 1.1 0 1 1-2.3 0 1.1 1.1 0 0 1 2.3 0z"/></svg>
+            </a>
+            <a href="https://www.facebook.com/share/1Aia6VEyLs/" target="_blank" rel="noopener" aria-label="Facebook">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 12a10 10 0 1 0-11.6 9.9v-7H7.9V12h2.5V9.8c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.2.2 2.2.2v2.5h-1.2c-1.2 0-1.6.8-1.6 1.6V12h2.7l-.4 2.9h-2.3v7A10 10 0 0 0 22 12z"/></svg>
+            </a>
+            <a href="mailto:eliseveilletherapie@gmail.com" aria-label="Email">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2zm0 2v.5l8 5 8-5V6H4zm16 12V8.9l-7.5 4.7c-.3.2-.7.2-1 0L4 8.9V18h16z"/></svg>
+            </a>
+          </div>
+          <a class="footer__email" href="mailto:eliseveilletherapie@gmail.com">eliseveilletherapie@gmail.com</a>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <span>© <span data-year>2026</span> Elise Veille Sommeil. Tous droits réservés.</span>
+        <a href="#">Mentions légales</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

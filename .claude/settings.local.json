@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npx --version)",
+      "PowerShell($node = Get-Command node -ErrorAction SilentlyContinue; if \\($node\\) { \"node: $\\($node.Source\\)\" } else { \"node: NOT FOUND\" }; $py = Get-Command python -ErrorAction SilentlyContinue; if \\($py\\) { \"python: $\\($py.Source\\)\" } else { \"python: NOT FOUND\" }; $py3 = Get-Command py -ErrorAction SilentlyContinue; if \\($py3\\) { \"py: $\\($py3.Source\\)\" } else { \"py: NOT FOUND\" })",
+      "mcp__Claude_Preview__preview_start"
+    ]
+  }
+}
