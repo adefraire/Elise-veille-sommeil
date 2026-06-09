@@ -38,36 +38,56 @@
   </header>
 
   <main>
-    <!-- ============ PAGE HERO ============ -->
-    <section class="page-hero">
+    <!-- ============ En-tête éditorial (fond crème, aligné à gauche) ============ -->
+    <section class="method-head">
       <div class="container">
-        <h1 class="page-hero__title">Parlons de tes nuits</h1>
-        <p class="page-hero__intro">
-          Tu te reconnais dans ce que tu as lu ? La première étape, c'est un simple échange,
-          sans engagement.
-        </p>
+        <div class="method-intro__inner reveal">
+          <span class="section__eyebrow method-intro__eyebrow">Contact</span>
+          <h1 class="method-intro__title">Parlons de tes nuits</h1>
+        </div>
       </div>
     </section>
 
-    <!-- ============ Contact ============ -->
-    <section class="section">
+    <!-- ============ Contact : deux colonnes ============ -->
+    <section class="section section--tight story-section">
       <div class="container">
-        <div class="contact-card reveal">
-          <!-- TODO : remplacer href="#" par le lien Calendly -->
-          <a href="#" target="_blank" rel="noopener" class="btn btn--primary">
-            Réserver un premier échange
-          </a>
+        <div class="split split--top">
+          <!-- Colonne gauche : photo + mot d'accueil -->
+          <div class="split__text reveal">
+            <img class="media-img contact-photo"
+                 src="images/portrait-elise.webp"
+                 alt="Portrait d'Elise, thérapeute du sommeil"
+                 loading="lazy" />
+            <p class="contact-welcome">
+              Faisons connaissance. Le premier échange est un moment pour parler de tes nuits,
+              poser toutes tes questions, et voir ensemble si la méthode Ora Sommeil te correspond.
+              En toute simplicité, sans engagement.
+            </p>
+          </div>
 
-          <!-- TODO : remplacer href="#" par le lien Tally -->
-          <p class="contact-secondary">
-            Une question avant de te lancer ?
-            <a href="#" target="_blank" rel="noopener">Écris-moi</a>
-          </p>
+          <!-- Colonne droite : encart de contact -->
+          <div class="reveal">
+            <div class="contact-card">
+              <p class="contact-card__label">Prête à commencer ?</p>
 
-          <div class="contact-info">
-            <a href="https://www.instagram.com/eliseveillesommeil/" target="_blank" rel="noopener">Instagram</a>
-            <a href="https://www.facebook.com/share/1Aia6VEyLs/" target="_blank" rel="noopener">Facebook</a>
-            <a href="mailto:eliseveilletherapie@gmail.com">eliseveilletherapie@gmail.com</a>
+              <!-- TODO : remplacer href="#" par le lien Calendly -->
+              <a href="#" target="_blank" rel="noopener" class="btn btn--primary">
+                Réserver un premier échange
+              </a>
+              <p class="contact-free">Gratuit et sans engagement</p>
+
+              <!-- TODO : remplacer href="#" par le lien Tally -->
+              <p class="contact-secondary">
+                Une question avant de te lancer ?
+                <a href="#" target="_blank" rel="noopener">Écris-moi</a>
+              </p>
+
+              <div class="contact-info">
+                <a href="https://www.instagram.com/eliseveillesommeil/" target="_blank" rel="noopener">Instagram</a>
+                <a href="https://www.facebook.com/share/1Aia6VEyLs/" target="_blank" rel="noopener">Facebook</a>
+                <a href="mailto:eliseveilletherapie@gmail.com">eliseveilletherapie@gmail.com</a>
+              </div>
+            </div>
           </div>
         </div>
       </div>

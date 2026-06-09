@@ -93,6 +93,17 @@
     }
   }
 
+  /* ---------- Carrousel de témoignages (fondu, ~4s) ---------- */
+  const slides = document.querySelectorAll('.testi-slide');
+  if (slides.length > 1) {
+    let current = 0;
+    setInterval(function () {
+      slides[current].classList.remove('is-active');
+      current = (current + 1) % slides.length;
+      slides[current].classList.add('is-active');
+    }, 4000);
+  }
+
   /* ---------- Année dynamique footer ---------- */
   const yearEl = document.querySelector('[data-year]');
   if (yearEl) {

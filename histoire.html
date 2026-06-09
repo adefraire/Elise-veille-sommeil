@@ -38,25 +38,29 @@
   </header>
 
   <main>
-    <!-- ============ PAGE HERO ============ -->
-    <section class="page-hero">
+    <!-- ============ En-tête éditorial (fond crème, aligné à gauche) ============ -->
+    <section class="method-head">
       <div class="container">
-        <h1 class="page-hero__title">Je suis Elise, et je sais exactement ce que tu traverses</h1>
+        <div class="method-intro__inner reveal">
+          <span class="section__eyebrow method-intro__eyebrow">Mon histoire</span>
+          <h1 class="method-intro__title">Je suis Elise, et je sais exactement ce que tu traverses</h1>
+        </div>
       </div>
     </section>
 
-    <!-- ============ Histoire ============ -->
-    <section class="section">
+    <!-- ============ Histoire : photo à gauche, tout le texte à droite (dans une carte) ============ -->
+    <section class="section section--tight story-section">
       <div class="container">
-        <div class="split">
-          <div class="split__media reveal">
-            <img class="media-img"
-                 src="images/portrait-elise.webp"
-                 alt="Portrait d'Elise, thérapeute du sommeil"
-                 loading="lazy" />
-          </div>
-          <div class="split__text reveal">
-            <p>
+        <div class="story-card reveal">
+          <div class="split split--center">
+            <div class="split__media">
+              <img class="media-img story-card__photo"
+                   src="images/elise-histoire.png"
+                   alt="Portrait d'Elise, thérapeute du sommeil"
+                   loading="lazy" />
+            </div>
+            <div class="split__text">
+              <p>
               Je suis mariée, maman de trois enfants. Et aussi loin que je me souvienne,
               je n'ai jamais bien dormi.
             </p>
@@ -65,26 +69,59 @@
               ai vécus : la fatigue qui ne lâche pas, le brouillard mental, l'irritabilité,
               les douleurs chroniques. Pendant longtemps, ça a été mon quotidien.
             </p>
-            <p><strong>Mais ça, c'était avant.</strong></p>
+            <p class="story-pivot">Mais ça, c'était avant.</p>
+            <p>
+              Je suis kiné de formation, mais aussi hypnothérapeute et formée aux fleurs de Bach.
+              En cherchant ma propre solution, j'ai compris quelque chose que personne ne m'avait
+              dit : le sommeil ne se répare pas en changeant de matelas, mais en rééduquant son
+              souffle et en apaisant son mental.
+            </p>
+            <p>
+              Aujourd'hui, j'ai à cœur de partager ce que j'ai moi-même appris. J'aide les adultes
+              de 30 à 45 ans à transformer leurs nuits et à redonner à leur corps l'énergie d'être
+              pleinement acteurs de leur vie, grâce à la méthode Ora Sommeil.
+            </p>
+            </div>
           </div>
         </div>
 
-        <div class="quote-feature reveal" style="text-align:left; margin-top: 56px;">
-          <p>
-            Je suis kiné de formation, mais aussi hypnothérapeute et formée aux fleurs de Bach.
-            En cherchant ma propre solution, j'ai compris quelque chose que personne ne m'avait
-            dit : le sommeil ne se répare pas en changeant de matelas, mais en rééduquant son
-            souffle et en apaisant son mental.
+      </div>
+    </section>
+
+    <!-- ============ Mon parcours / légitimité ============ -->
+    <section class="section section--tight section--creme-fonce">
+      <div class="container">
+        <div class="text-center reveal">
+          <span class="section__eyebrow">Mon parcours</span>
+          <h2 class="section__title">Une approche fondée sur quinze ans de pratique</h2>
+          <p class="section__intro mx-auto">
+            Mon accompagnement n'a rien d'improvisé. Il s'appuie sur des années de formation
+            et de pratique, au croisement de plusieurs disciplines.
           </p>
-          <p style="margin-top: 18px;">
-            Aujourd'hui, j'ai à cœur de partager ce que j'ai moi-même appris. J'aide les adultes
-            de 30 à 45 ans à transformer leurs nuits et à redonner à leur corps l'énergie d'être
-            pleinement acteurs de leur vie, grâce à la méthode Ora Sommeil.
-          </p>
-          <div class="btn-row">
-            <a href="methode.html" class="btn btn--outline">Découvrir la méthode</a>
-            <a href="contact.html" class="btn btn--primary">Prendre rendez-vous</a>
-          </div>
+        </div>
+
+        <ul class="creds reveal">
+          <li>Kinésithérapeute diplômée d'État depuis 2010</li>
+          <li>Spécialisée dans les troubles de l'oralité et du sommeil (formation 2024)</li>
+          <li>Diplômée en hypnose, formée auprès de Lise Bartoli (2024)</li>
+          <li>Formée aux fleurs de Bach auprès de Nature de Déesse (2023)</li>
+          <li>Deux ans d'accompagnement dédié aux troubles du sommeil</li>
+        </ul>
+
+        <p class="creds-note reveal">
+          Et de nombreuses autres formations au fil des années (posturologie, pédiatrie posturale,
+          réflexes archaïques...), témoins d'une curiosité qui ne s'arrête jamais.
+        </p>
+
+        <div class="creds-ids reveal">
+          <span>Numéro RPPS&nbsp;: 10005896906</span>
+          <span class="creds-ids__sep">|</span>
+          <span>Numéro ADELI&nbsp;: 737021527</span>
+        </div>
+
+        <div class="btn-row btn-row--center reveal" style="margin-top: 40px;">
+          <a href="methode.html" class="btn btn--outline">Découvrir la méthode</a>
+          <a href="contact.html" class="btn btn--primary">Prendre rendez-vous</a>
         </div>
       </div>
     </section>
