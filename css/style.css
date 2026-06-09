@@ -1498,6 +1498,50 @@ h1, h2, h3, h4 {
 }
 
 /* ============================================
+   PAGE MENTIONS LÉGALES
+   ============================================ */
+.legal {
+  max-width: 760px;
+  margin-inline: auto;
+  color: var(--texte);
+  font-size: 1.02rem;
+  line-height: 1.75;
+}
+
+.legal__h {
+  font-size: 1.3rem;
+  color: var(--bleu-nuit);
+  margin: 36px 0 12px;
+}
+
+.legal__h:first-child {
+  margin-top: 0;
+}
+
+.legal p {
+  margin-bottom: 16px;
+}
+
+.legal a {
+  color: var(--bleu-nuit);
+  text-decoration: underline;
+  text-decoration-color: var(--abricot);
+  text-underline-offset: 3px;
+  transition: color var(--transition);
+}
+
+.legal a:hover {
+  color: var(--abricot-fonce);
+}
+
+.legal__update {
+  font-size: 0.92rem;
+  font-style: italic;
+  opacity: 0.8;
+  margin-top: 30px;
+}
+
+/* ============================================
    CONTACT
    ============================================ */
 .contact-card {
