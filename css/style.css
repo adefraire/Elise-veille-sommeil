@@ -1592,54 +1592,8 @@ h1, h2, h3, h4 {
   padding-block: 18px;
 }
 
-.contact-secondary {
-  margin-top: 2px;
-  margin-bottom: 8px;
-  font-size: 0.98rem;
-  color: var(--texte);
-}
-
-/* Lien secondaire traité comme une action (rattrapage d'objection) */
-.contact-ask {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  font-family: var(--font-titre);
-  font-weight: 600;
-  font-size: 1.02rem;
-  color: var(--abricot-fonce);
-  text-decoration: none;
-  transition: color var(--transition);
-}
-
-.contact-ask__arrow {
-  transition: transform var(--transition);
-}
-
-.contact-ask:hover {
-  color: var(--bleu-nuit);
-}
-
-.contact-ask:hover .contact-ask__arrow {
-  transform: translateX(5px);
-}
-
-/* Bloc réseaux sociaux, distinct du CTA */
-.contact-social {
-  margin-top: 40px;
-}
-
-.contact-social__label {
-  margin-bottom: 16px;
-  font-family: var(--font-titre);
-  font-weight: 500;
-  font-size: 0.72rem;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: var(--bleu-brume);
-}
-
 .contact-info {
+  margin-top: 40px;
   display: flex;
   flex-wrap: wrap;
   gap: 18px;
